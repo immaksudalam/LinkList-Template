@@ -34,7 +34,6 @@ public:
         if(!head || !head->next) return true;
         ListNode* mid = findMid(head);
         ListNode* l2 = mid->next;
-        mid->next = NULL;
         l2 = reverse(l2);
         return compare(head, l2);
     }
